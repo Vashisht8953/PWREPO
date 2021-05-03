@@ -1,0 +1,31 @@
+$main-color: linear-gradient(to right, #e45e5e, #19bbe4);
+$main-height: calc(100vh - 108px);
+@mixin flex {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: $main-color !important;
+}
+.loaderSpinner {
+  height: $main-height;
+  @include flex;
+}
+.popularcards-wrapper {
+  background: $main-color !important;
+}
+.main-cards {
+  justify-content: center;
+}
+.empty-msg {
+  height: $main-height;
+  @include flex;
+}
+.starredRepos-wrapper {
+  height: $main-height;
+  background: $main-color !important;
+}
+.button {
+  width: unset !important;
+}
